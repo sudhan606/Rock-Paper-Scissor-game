@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+  padding: 0;
+  text-align: center;
+    
+  
+}
+h1{
+    background-color: rgba(55, 35, 157, 0.628);
+    text-align: center;
+    height: 3rem;
+    width: 30rem;
+    line-height: 3rem;
+    align-self: center;
+    display: inline-block;
+    margin-top: 2px;
+    border-radius: 10px;
+
+}
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    border-bottom-left-radius: 50%;
+    object-fit:cover;
+    padding: 20px;
+    
+}
+.image{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img:hover{
+    filter: drop-shadow(0 0 10px navy);
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+.compscore,.userscore{
+    font-size:3rem ;
+    font-weight: 500;
+}
+.message{
+    background-color: rgb(5, 80, 118);
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+    padding:10px;
+    line-height:50px ;
+    position: absolute;
+    bottom: 2px;
+}
+.view{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.view div img{
+    height: 50px;
+    width: 50px;
+    object-fit:cover;
+    margin-top: 15px;
+}
+/*
+.rock{
+    background-image: url("rock.png");
+    height: 100px;
+    width:100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   border-radius: 50%;
+}
+<div class="uc">
+                <p>Your's Choice:</p>
+                <img src="" alt="" class="your">
+            </div>
+            <div >
+                <p>Computer's Choice:</p>
+                <img src="" alt="" class="computers">
+            </div>
+.paper{
+   background-image: url("paper.png");
+    height: 100px;
+    width:100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   border-radius: 50%;
+}
+.scissor{
+    background-image: url("scissor.png");
+    height: 100px;
+    width:100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   border-radius: 50%;
+}*/
