@@ -6,15 +6,18 @@
   
 }
 h1{
-    background-color: rgba(55, 35, 157, 0.628);
+    background: linear-gradient( 171deg, #42d392, #647eff, #C0382B );
     text-align: center;
     height: 3rem;
     width: 30rem;
+    font-size: 3rem;
     line-height: 3rem;
     align-self: center;
     display: inline-block;
     margin-top: 2px;
     border-radius: 10px;
+    background-clip: text;
+    color: transparent;
 
 }
 .option{
