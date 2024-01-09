@@ -8,7 +8,8 @@ let message=document.querySelector(".message");
 let your=document.querySelector(".your");
 let compu=document.querySelector(".computers");
 let view=document.querySelector(".view");
-
+let mode=document.querySelector("button");
+let body=document.querySelector("body");
 choice.forEach((option)=>{
     option.addEventListener("click",()=>{
         let userc=option.getAttribute("id");
@@ -16,6 +17,44 @@ choice.forEach((option)=>{
         view.style.display="flex";
         play(userc);
     })
+})
+choice.forEach((option)=>{
+    option.childNodes[0].addEventListener("mouseover",()=>{
+        if(body.style.backgroundColor==="white")
+        option.childNodes[0].style.filter="drop-shadow(0 0 10px navy)";
+        else
+        option.childNodes[0].style.filter="drop-shadow(0 0 10px white)";
+    })
+    option.childNodes[0].addEventListener("mouseout",()=>{
+        option.childNodes[0].style.filter="";
+    })
+})
+
+mode.addEventListener("click",()=>{
+    if(body.style.backgroundColor==="white")
+    {
+        mode.innerHTML=`<span class="material-symbols-outlined">
+        light_mode
+        </span>`;
+        mode.style.backgroundColor="white";
+        mode.style.color="black";
+        mode.style.borderColor="white";
+        body.style.backgroundColor="black";
+        body.style.color="White";
+        console.log("Dark");
+    }
+    else{
+        mode.innerHTML=`<span class="material-symbols-outlined">
+        dark_mode
+        </span>`;
+        mode.style.backgroundColor="black";
+        mode.style.color="white";
+        mode.style.borderColor="black";
+        body.style.backgroundColor="white";
+        body.style.color="black";
+        console.log("light");
+
+    }
 })
 
 const getcompc=()=>{
