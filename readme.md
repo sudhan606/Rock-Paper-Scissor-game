@@ -1,6 +1,3 @@
-Certainly! Here's how you can add a section indicating that the page is live on GitHub and include the link:
-
-```markdown
 # Rock, Paper, Scissors Game
 
 Welcome to the Rock, Paper, Scissors game! This is a simple web-based game built using HTML, CSS, and JavaScript.
