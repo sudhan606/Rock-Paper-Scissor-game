@@ -20,13 +20,18 @@ choice.forEach((option)=>{
 })
 choice.forEach((option)=>{
     option.childNodes[0].addEventListener("mouseover",()=>{
-        if(body.style.backgroundColor==="white")
-        option.childNodes[0].style.filter="drop-shadow(0 0 10px navy)";
-        else
-        option.childNodes[0].style.filter="drop-shadow(0 0 10px white)";
+        if(body.style.backgroundColor==="white"){
+            option.childNodes[0].style.filter="drop-shadow(0 0 10px navy)";
+            //option.childNodes[0].style.transition="0.2s ease-in;"
+        }
+        else{
+            option.childNodes[0].style.filter="drop-shadow(0 0 10px white)";
+           // option.childNodes[0].style.transition="0.5s ease-in;"
+        }
     })
     option.childNodes[0].addEventListener("mouseout",()=>{
         option.childNodes[0].style.filter="";
+        option.childNodes[0].style.transition="transition: 0.2s ease-in;"
     })
 })
 
@@ -36,23 +41,23 @@ mode.addEventListener("click",()=>{
         mode.innerHTML=`<span class="material-symbols-outlined">
         light_mode
         </span>`;
-        mode.style.backgroundColor="white";
-        mode.style.color="black";
-        mode.style.borderColor="white";
-        body.style.backgroundColor="black";
-        body.style.color="White";
-        console.log("Dark");
+        mode.classList.remove("light");
+        mode.classList.add("dark");
+        mode.style.color="white";
+        body.style.backgroundColor="#1a1625";
+        body.style.color="white";
+        //console.log("Dark");
     }
     else{
         mode.innerHTML=`<span class="material-symbols-outlined">
         dark_mode
         </span>`;
-        mode.style.backgroundColor="black";
-        mode.style.color="white";
-        mode.style.borderColor="black";
+        mode.classList.add("light");
+        mode.classList.remove("dark");
+        mode.style.color="black";
         body.style.backgroundColor="white";
         body.style.color="black";
-        console.log("light");
+        //console.log("light");
 
     }
 })
